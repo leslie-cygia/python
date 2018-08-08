@@ -189,5 +189,5 @@ if __name__ == '__main__':
 	# histogram()
 	# histogram_single()
 	# histogram_double()
-	# population()
+	population()
 	# print(COUNTRIES)
