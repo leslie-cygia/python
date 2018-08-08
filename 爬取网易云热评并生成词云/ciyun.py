@@ -14,11 +14,11 @@ from PIL import Image, ImageDraw, ImageFont
 # 绘制词云
 def draw_wordcloud():
     #读入一个txt文件
-    comment_text = open('C:/Users/soft/Desktop/xx.txt','r',encoding='gb18030').read()
+    comment_text = open('C:/Users/soft/Desktop/西游记.txt','r',encoding='gb18030').read()
     #结巴分词，生成字符串，如果不通过分词，无法直接生成正确的中文词云
     cut_text = " ".join(jieba.cut(comment_text))
     d = path.dirname(__file__) # 当前文件文件夹所在目录
-    color_mask = imread("image/bear.jpg") # 读取背景图片
+    color_mask = imread("../image/bear.jpg") # 读取背景图片
     cloud = WordCloud(
         #设置字体，不指定就会出现乱码
         font_path="SIMYOU.TTF",
